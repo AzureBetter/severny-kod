@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Северный код</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    background:#e9dcc4;
+    font-family:'Comfortaa', cursive;
+    color:#20395c;
+}
+
+.page{
+    max-width:1200px;
+    margin:30px auto;
+    background:#fffdf6;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px #0003;
+}
+
+h1{
+    font-size:55px;
+    margin:0;
+    letter-spacing:5px;
+}
+
+.subtitle{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+
+.card{
+    border:2px solid #d7c7aa;
+    border-radius:20px;
+    padding:25px;
+    background:#fffdf8;
+}
+
+.title{
+    background:#f4dca0;
+    padding:10px 20px;
+    display:inline-block;
+    border-radius:8px;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.text{
+    line-height:1.7;
+    font-size:16px;
+}
+
+
+.route li{
+    list-style:none;
+    margin:18px 0;
+    padding:12px;
+    border-bottom:1px dashed #aaa;
+    font-size:18px;
+}
+
+.route li::before{
+    content:"📍 ";
+    margin-right:10px;
+}
+
+
+.budget div{
+    display:flex;
+    justify-content:space-between;
+    padding:12px;
+    border-bottom:1px dashed #aaa;
+}
+
+
+.total{
+    margin-top:20px;
+    background:#f4d36d;
+    padding:15px;
+    border-radius:12px;
+    font-weight:bold;
+    font-size:20px;
+}
+
+
+.features li{
+    margin:15px 0;
+    list-style:none;
+}
+
+.features li::before{
+    content:"✓";
+    color:#d34b3c;
+    font-weight:bold;
+    margin-right:10px;
+}
+
+
+.passport{
+    background:#dce7bd;
+}
+
+.qr{
+    font-size:70px;
+    text-align:center;
+}
+
+
+.footer{
+    margin-top:30px;
+    background:#e7e1a9;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    font-size:22px;
+}
+
+
+.car{
+    font-size:60px;
+    text-align:right;
+}
+
+
+@media(max-width:800px){
+
+.grid{
+    grid-template-columns:1fr;
+}
+
+h1{
+    font-size:40px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="page">
+
+
+<h1>Северный<br>код</h1>
+
+<div class="subtitle">
+6 дней · 5 регионов · до 2000 км 🚗 🌲 
+</div>
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<div class="title">
+1. Концепция проекта
+</div>
+
+<p class="text">
+Молодёжное автопутешествие-квест по Северо-Западному федеральному округу через АЗС «Роснефть».
+<br><br>
+Мы исследуем историю, культуру и природу севера России, выполняя задания, собирая коды и создавая контент.
+</p>
+
+</div>
+
+
+
+<div class="card route">
+
+<div class="title">
+2. Маршрут
+</div>
+
+<ul>
+
+<li>Санкт-Петербург</li>
+<li>Великий Новгород</li>
+<li>Псков</li>
+<li>Печоры</li>
+<li>Изборск</li>
+<li>Выборг</li>
+<li>Сортавала</li>
+<li>Рускеала</li>
+<li>Санкт-Петербург</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="title">
+3. АЗС «Роснефть» на маршруте
+</div>
+
+<ul class="route">
+
+<li>Великий Новгород — старт маршрута</li>
+
+<li>Псков — крепость и история</li>
+
+<li>Печоры — монастыри и пещеры</li>
+
+<li>Изборск — древняя крепость</li>
+
+<li>Выборг — европейский город</li>
+
+<li>Сортавала — отдых и кофе</li>
+
+<li>Рускеала — мраморный каньон</li>
+
+<li>Санкт-Петербург — финальный код</li>
+
+</ul>
+
+</div>
+
+
+
+
+<div class="card budget">
+
+<div class="title">
+4. Бюджет
+</div>
+
+
+<div>
+<span>⛽ Топливо</span>
+<span>≈ 8 960 ₽</span>
+</div>
+
+
+<div>
+<span>🏠 Проживание</span>
+<span>7500–12500 ₽</span>
+</div>
+
+
+<div>
+<span>🍴  Еда</span>
+<span>6000–8000 ₽</span>
+</div>
+
+
+<div>
+<span>🎫  Билеты</span>
+<span>3000–6000 ₽</span>
+</div>
+
+
+<div>
+<span>☕ Кофе и запас</span>
+<span>2000–3000 ₽</span>
+</div>
+
+
+<div class="total">
+Итого: ≈ 21 000–32 000 ₽
+</div>
+
+</div>
+
+
+
+
+
+<div class="card passport">
+
+<div class="title">
+5. Паспорт Северного кода
+</div>
+
+
+<p>
+Фишка проекта:
+паспорт путешественника с кодами маршрута.
+</p>
+
+
+<div class="qr">
+▣
+</div>
+
+
+<p>
+Собирай коды на каждой точке и получи память о путешествии!
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+<div class="title">
+02:53
+6. Почему это интересно молодёжи?
+</div>
+
+
+<ul class="features">
+
+<li>Приключение и свобода дороги</li>
+
+<li>История и культура в живом формате</li>
+
+<li>Красивые места для фото</li>
+
+<li>Квест-задания и сбор кодов</li>
+
+<li>Новые друзья и командный дух</li>
+
+<li>Доступный формат отдыха</li>
+
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="footer">
+
+Мы не просто едем —<br>
+мы разгадываем Северный код! 🚗 
+
+<div class="car">
+🌲  🚙  📍 
+</div>
+
+</div>
+
+
+
+</div>
+
+
+</body>
+</html>
